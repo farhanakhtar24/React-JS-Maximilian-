@@ -14,5 +14,8 @@ UseState is a react hook, most of the hooks start with use in their name and all
 inside the component function only and we cannot call it at any other place (like inside a nested function 
 or outside the component function)  
 
-
+The useState function is evaluated for each instance of a component.for eg if we have 4 instances of same component
+then, the useState func. will be evaluated for each instance of that component individually whenever the useState function will
+be triggered for a particular instance
+State is really separated on a per component instance basis 
 */
