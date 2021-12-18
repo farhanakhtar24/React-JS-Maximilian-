@@ -1,9 +1,11 @@
+import React from 'react';
+import Card from '../UI/Card';
 import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 
 const Expenses = function (props) {
     return (
-        <div className="expenses">
+        <Card className="expenses">
             <ExpenseItem
                 title={ props.expenseData[0].title } // we can also pass the data as a static data
                 amount={ props.expenseData[0].amount }
@@ -24,7 +26,7 @@ const Expenses = function (props) {
                 amount={ props.expenseData[3].amount }
                 date={ props.expenseData[3].date }
             ></ExpenseItem>
-        </div>
+        </Card>
     );
 }
 
