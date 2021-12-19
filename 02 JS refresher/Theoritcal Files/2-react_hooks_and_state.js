@@ -10,7 +10,7 @@ or outside the component function)
 The usestate function allows us to define values as state where changes to these values should reflect in the 
 component function being called again.
 
-UseState is a react hook, most of the hooks start with use in their name and all these hooks need to be called 
+UseState is a react hook, most of the hooks start with 'use' in their name and all these hooks need to be called 
 inside the component function only and we cannot call it at any other place (like inside a nested function 
 or outside the component function)  
 
