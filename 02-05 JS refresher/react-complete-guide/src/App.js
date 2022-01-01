@@ -32,7 +32,7 @@ const DummyExpenses = [
 function App() {
   const [expenses, setExpenses] = useState(DummyExpenses);
 
-
+  DummyExpenses.map()
   // return React.createElement('div', {},
   //   React.createElement('h2', {}, "Let's get started !"),
   //   React.createElement(Expenses, { items: expenses }),
