@@ -1,0 +1,13 @@
+.FormInputDivs {
+	padding: 10px;
+	display: flex;
+	/* line-height: 1.5; */
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.FormInputDivs label {
+	padding: 5px 0;
+	font-weight: bold;
+}

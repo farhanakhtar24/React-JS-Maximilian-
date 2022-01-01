@@ -1,19 +1,22 @@
 import React from 'react';
+import Button from '../Button/Button';
 import classes from './Form.module.css';
+import InputDiv from './InputDiv';
+
+
 
 const Form = function (props) {
     return (
         <div className={ classes.MainFormDiv }>
             <form>
-                <div className={ classes.FormInputDivs }>
-                    <label>Username</label>
-                    <input></input>
-                </div>
-                <div className={ classes.FormInputDivs }>
-                    <label>Age (Years)</label>
-                    <input></input>
-                </div>
+                { props.InputArray.map(listlabel => {
+                    return (
+                        <InputDiv>{ listlabel }</InputDiv>
+                    );
+                })
+                }
             </form>
+            <Button>Add User</Button>
         </div>
     );
 }
