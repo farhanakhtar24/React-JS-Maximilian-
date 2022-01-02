@@ -1,0 +1,10 @@
+.ItemListRendererDiv {
+	width: 50%;
+	height: auto;
+	background: white;
+	border-radius: 10px;
+	padding: 30px 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
