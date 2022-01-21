@@ -39,7 +39,6 @@ const AvailableMeals = function (props) {
             name={ meal.name }
             price={ meal.price }
             description={ meal.description }
-
         />
 
     });
