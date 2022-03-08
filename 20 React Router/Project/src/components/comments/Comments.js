@@ -9,16 +9,16 @@ const Comments = () => {
   const startAddCommentHandler = () => {
     setIsAddingComment(true);
   };
-  
+
   return (
-    <section className={classes.comments}>
+    <section className={ classes.comments }>
       <h2>User Comments</h2>
-      {!isAddingComment && (
-        <button className='btn' onClick={startAddCommentHandler}>
+      { !isAddingComment && (
+        <button className='btn' onClick={ startAddCommentHandler }>
           Add a Comment
         </button>
-      )}
-      {isAddingComment && <NewCommentForm />}
+      ) }
+      { isAddingComment && <NewCommentForm /> }
       <p>Comments...</p>
     </section>
   );
