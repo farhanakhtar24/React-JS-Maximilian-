@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Redirect, Route, Routes } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import MainHeader from './components/MainHeader';
 import ProductDetail from './pages/ProductDetail';
 import Products from './pages/Products';
@@ -10,10 +10,10 @@ const App = () => {
     <Fragment>
       <MainHeader></MainHeader>
       <main>
-        <Routes>
-          {/* <Route path="/" exact>
+        <Switch>
+          <Route path="/" exact>
             <Redirect to="/welcome"></Redirect>
-          </Route> */}
+          </Route>
           <Route path="/welcome">
             <Welcome></Welcome>
           </Route>
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/products/:productId">
             <ProductDetail></ProductDetail>
           </Route>
-        </Routes>
+        </Switch>
       </main>
     </Fragment >
   )
