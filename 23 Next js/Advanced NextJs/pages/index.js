@@ -41,10 +41,8 @@ const index = (props) => {
 
 export async function getStaticProps() {
     return {
-        //this props object is linked to the props object in the index component
-        // whatever props we return here will be passed to the index component as props
         props: {
-            meetups: DUMMY_MEETUPS,
+            meetups: DUMMY_MEETUPS, // will be passed to the page component as props
         },
 
         // Next.js will attempt to re-generate the page:
@@ -53,5 +51,18 @@ export async function getStaticProps() {
         revalidate: 1,
     }
 };
+
+// // everything same as above but , This gets called on every request
+// // its better to use the above function for server side rendering . 
+// export async function getServerSideProps(context) {
+//     const req = context.req;
+//     const res = context.res;
+//     //fetch data from API
+//     return {
+//         props: {
+//             meetups: DUMMY_MEETUPS
+//         }
+//     }
+// }
 
 export default index
